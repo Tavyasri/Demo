@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="css/style.css">
+    <title>Job Portal</title>
+</head>
+<body>
+  <section>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container">
+                <a class="navbar-brand fs-1" href="#"><h3>JOB PORTAL</h3></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="#" id="menu">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="#" id="menu">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">Employer</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Creat Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Job Post</a></li>
+                            <li><a class="dropdown-item" href="#">Review Application</a></li>
+                            <li><a class="dropdown-item" href="#">Feedback</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">Job Seeker</a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Creat Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Job List</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="#">Register</a>
+                        </li>
+                        <li class="nav-item">
+                          <div class="container">
+                            <button type="button" class="btn btn-dark fs-4" data-bs-toggle="modal" data-bs-target="#myModal">
+                              Login
+                            </button>
+                          </div>
+                          <!-- The Modal -->
+                          <div class="modal" id="myModal">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                            <!--Modal Header-->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">SignIn</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                            <!--Modal Body-->
+                                <div class="modal-body">
+                                    <div class="inp" style="margin: 5px 0"> 
+                                        <div class="btn-group" role="group" aria-label="Basic outlined example" style="margin-left: 55px;
+                                        width:75%">
+                                            <button type="button" class="btn btn-outline-primary">Employer</button>
+                                            <button type="button" class="btn btn-outline-primary">Jobseeker</button>
+                                          </div>
+                                        <div class="lg" style="width: 100%; margin-left: 50px;">
+                                            <input type="text" name="username" placeholder="Username" required style="margin-bottom:10px">
+                                            <input type="password" name="password" placeholder="Password" required><br>
+                                            <a href="url">Forgot Password?</a>
+                                            <input type="submit" value="Login">
+                                        </div>
+                                        <div>
+                                            <hr class="hr-text" data-content="Or">
+                                        </div>
+                                        <div class="fa_icons" style="margin-left: 55px">
+                                            <a href="#" class="fb btn">
+                                              <i class="fa fa-facebook-official fa-fw" style="font-size:36px;color:#3B5998"></i> 
+                                            </a>
+                                            <a href="#" class="twitter btn">
+                                              <i class="fa fa-twitter-square fa-fw" style="font-size:36px;color:#55ACEE"></i> 
+                                            </a>
+                                            <a href="#" class="google btn">
+                                              <i class="fa fa-google-plus-official fa-fw" style="font-size:36px;color:#dd4b39"></i> 
+                                            </a>
+                                            <a href="#" class="Linkedin btn">
+                                                <i class="fa fa-linkedin-square fa-fw" style="font-size:36px;color:#0072b1"></i> 
+                                              </a>
+                                          </div>
+                                          <div class="signup" style="float: right;">
+                                            New User: <a href="url">Register/Signup</a>
+                                        </div>        
+                            </div>
+                            </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+  </section>
+  <section>
+      <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active msg">
+                    <img src="images/b.jpeg" alt="Los Angeles" class="d-block">
+                </div>
+                <div class="carousel-item msg">
+                    <img src="images/c.jpeg" alt="Chicago" class="d-block">
+                </div>
+                <div class="carousel-item msg">
+                    <img src="images/office-home-house-desk-159839.webp" alt="New York" class="d-block">
+                </div>
+            </div>
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        <div class="container-fluid mt-3">
+          <!--Searchbar section-->  
+        </section>
+        <section class="search-sec">
+            <div class="container">
+                <form action="#" method="post" novalidate="novalidate">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                    <input type="text" class="form-control search-slt" placeholder="Search Keywords">
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                    <input type="text" class="form-control search-slt" placeholder="Enter Specialism">
+                                </div> 
+                                <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                    <select class="form-control search-slt" id="exampleFormControlSelect1">
+                                        <option>Select Location</option>
+                                        <option>Hyderbad</option>
+                                        <option>Bangalore</option>
+                                        <option>Mumbai</option>
+                                        <option>Chennai</option>
+                                        <option>Delhi</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                                    <button type="button" class="btn btn-danger wrn-btn">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+             </div>
+        </section>
+      </div>
+  </section>
+</body>
+</html>
